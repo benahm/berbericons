@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'berbericons';
+	src:url('fonts/berbericons.eot?-dce4dz');
+	src:url('fonts/berbericons.eot?#iefix-dce4dz') format('embedded-opentype'),
+		url('fonts/berbericons.woff?-dce4dz') format('woff'),
+		url('fonts/berbericons.ttf?-dce4dz') format('truetype'),
+		url('fonts/berbericons.svg?-dce4dz#berbericons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'berbericons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ya:before {
+	content: "\e600";
+}
+.icon-ya3:before {
+	content: "\e601";
+}
+.icon-yab:before {
+	content: "\e602";
+}
+.icon-yach:before {
+	content: "\e603";
+}
+.icon-yad:before {
+	content: "\e604";
+}
+.icon-yadd:before {
+	content: "\e605";
+}
+.icon-yaf:before {
+	content: "\e606";
+}
+.icon-yag:before {
+	content: "\e607";
+}
+.icon-yagh:before {
+	content: "\e608";
+}
+.icon-yah:before {
+	content: "\e609";
+}
+.icon-yahh:before {
+	content: "\e60a";
+}
+.icon-yaj:before {
+	content: "\e60b";
+}
+.icon-yak:before {
+	content: "\e60c";
+}
+.icon-yakh:before {
+	content: "\e60d";
+}
+.icon-yal:before {
+	content: "\e60e";
+}
+.icon-yam:before {
+	content: "\e60f";
+}
+.icon-yan:before {
+	content: "\e610";
+}
+.icon-yaq:before {
+	content: "\e611";
+}
+.icon-yar:before {
+	content: "\e612";
+}
+.icon-yarr:before {
+	content: "\e613";
+}
+.icon-yas:before {
+	content: "\e614";
+}
+.icon-yass:before {
+	content: "\e615";
+}
+.icon-yat:before {
+	content: "\e616";
+}
+.icon-yatt:before {
+	content: "\e617";
+}
+.icon-yaw:before {
+	content: "\e618";
+}
+.icon-yay:before {
+	content: "\e619";
+}
+.icon-yaz:before {
+	content: "\e61a";
+}
+.icon-yazz:before {
+	content: "\e61b";
+}
+.icon-yey:before {
+	content: "\e61c";
+}
+.icon-yi:before {
+	content: "\e61d";
+}
+.icon-you:before {
+	content: "\e61e";
+}
