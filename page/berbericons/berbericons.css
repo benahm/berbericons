@@ -1,0 +1,126 @@
+@font-face {
+	font-family: 'berbericons';
+	src:url('fonts/berbericons.eot?-dce4dz');
+	src:url('fonts/berbericons.eot?#iefix-dce4dz') format('embedded-opentype'),
+		url('fonts/berbericons.woff?-dce4dz') format('woff'),
+		url('fonts/berbericons.ttf?-dce4dz') format('truetype'),
+		url('fonts/berbericons.svg?-dce4dz#berbericons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+
+.berbericon is optimized for 16px.
+.mega-berbericon is optimized for 32px but can be used larger.
+
+*/
+.berbericon, .mega-berbericon {
+  font: normal normal normal 16px/1 berbericons;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mega-berbericon { font-size: 32px; }
+
+
+.berbericon-ya:before {
+	content: "\e600";
+}
+.berbericon-ya3:before {
+	content: "\e601";
+}
+.berbericon-yab:before {
+	content: "\e602";
+}
+.berbericon-yach:before {
+	content: "\e603";
+}
+.berbericon-yad:before {
+	content: "\e604";
+}
+.berbericon-yadd:before {
+	content: "\e605";
+}
+.berbericon-yaf:before {
+	content: "\e606";
+}
+.berbericon-yag:before {
+	content: "\e607";
+}
+.berbericon-yagh:before {
+	content: "\e608";
+}
+.berbericon-yah:before {
+	content: "\e609";
+}
+.berbericon-yahh:before {
+	content: "\e60a";
+}
+.berbericon-yaj:before {
+	content: "\e60b";
+}
+.berbericon-yak:before {
+	content: "\e60c";
+}
+.berbericon-yakh:before {
+	content: "\e60d";
+}
+.berbericon-yal:before {
+	content: "\e60e";
+}
+.berbericon-yam:before {
+	content: "\e60f";
+}
+.berbericon-yan:before {
+	content: "\e610";
+}
+.berbericon-yaq:before {
+	content: "\e611";
+}
+.berbericon-yar:before {
+	content: "\e612";
+}
+.berbericon-yarr:before {
+	content: "\e613";
+}
+.berbericon-yas:before {
+	content: "\e614";
+}
+.berbericon-yass:before {
+	content: "\e615";
+}
+.berbericon-yat:before {
+	content: "\e616";
+}
+.berbericon-yatt:before {
+	content: "\e617";
+}
+.berbericon-yaw:before {
+	content: "\e618";
+}
+.berbericon-yay:before {
+	content: "\e619";
+}
+.berbericon-yaz:before {
+	content: "\e61a";
+}
+.berbericon-yazz:before {
+	content: "\e61b";
+}
+.berbericon-yey:before {
+	content: "\e61c";
+}
+.berbericon-yi:before {
+	content: "\e61d";
+}
+.berbericon-you:before {
+	content: "\e61e";
+}
