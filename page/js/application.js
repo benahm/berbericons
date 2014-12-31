@@ -8,7 +8,7 @@ $(document).on('click', '.js-preview-switcher .js-view-mode', function(event){
 });
 
 $(document).on('click', '.js-showoff-icon', function(event){
-  var $icon = $(event.currentTarget).find('.mega-berbericon').fadeOut(200, function(){
+    var $icon = $(event.currentTarget).find('.mega-berbericon').fadeOut(200, function(){
     var $iconList = $('.js-icon-list [data-name]:not([data-name*=logo])');
     var newIcon = $iconList.eq(Math.floor(Math.random() * $iconList.length)).attr('data-name');
     $(event.currentTarget).find('.mega-berbericon').attr('class', "mega-berbericon " + newIcon);
@@ -46,6 +46,10 @@ $(document).on('click', '.js-modal-backdrop', function(event){
 });
 
 $(document).ready(function(){
+  setInterval(function(){
+    $( '.js-showoff-icon' ).trigger( "click" );
+  },2000);
+  
   var data = JSON.parse(localStorage.getItem('berbericons.github.com'));
   if ($('body').hasClass('index')){
     if(data && data.copyMode){
@@ -95,3 +99,40 @@ function copyMode(toggle) {
   var notStatus = (data.copyMode) ? "disable" : "enable" ;
   console.log("Copy mode has been " + status + ". To " + notStatus + ", run `copyMode(" + !data.copyMode + ")` in the console.");
 }
+
+
+/*================================ Angularjs ===================================*/
+
+'use strict';
+
+// Declare app level module which depends on views, and components
+var app=angular.module('app', [
+  'ngRoute'
+])
+
+app.config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+  .when('/', {
+    templateUrl:'home.html',
+    controller:'homeCtrl',
+    controllerAs: 'home'
+  })
+  .when('/icon/:iconName',{
+    templateUrl:'icon/icon.html',
+    controller:'iconCtrl',
+    controllerAs: 'icon'
+  })
+  .otherwise({redirectTo: '/'});
+}]);
+
+app.controller('appCtrl', ['$scope','$route', '$routeParams',function($scope,$routeParams) {
+
+}]);
+
+app.controller('homeCtrl', ['$scope','$routeParams',function($scope,$routeParams) {
+
+}]);
+
+app.controller('iconCtrl', ['$scope','$routeParams',function($scope,$routeParams) {
+  $scope.iconName = $routeParams.iconName
+}]);

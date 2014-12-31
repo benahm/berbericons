@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html>
+<html ng-app="app">
   
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="630" />
 
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:creator" content="@github" />
+    <meta property="twitter:creator" content="@benahm" />
     <meta property="twitter:title" content="berbericons" />
 
 
@@ -33,19 +33,20 @@
     <meta property="twitter:image:width" content="1200" />
     <meta property="twitter:image:height" content="630" />
 
-    <link rel="stylesheet" href="berbericons-logos/berbericons-logos.css">
     <link rel="stylesheet" href="berbericons/berbericons.css">
     <link rel="stylesheet" href="css/application.css">
     <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.min.js"></script>
     <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
   </head>
-  <body class="index">
+  <body class="index" ng-controller="appCtrl">
     <div class="footer-push">
       <header>
         <div class="wrapper">
-          <a href="index.html" class="logo">
+          <a href="#/" class="logo">
             Berber icons
           </a>
 
@@ -57,157 +58,157 @@
         <div class="select-menu-list js-search-result-list">
 
           
-          <a class="select-menu-item js-search-result" href="icon/ya/index.html" data-name="ya" data-keywords="ya a">
+          <a class="select-menu-item js-search-result" href="#/icon/ya" data-name="ya" data-keywords="ya a">
             <span class="select-menu-item-icon berbericon berbericon-ya"></span>
             <div class="select-menu-item-text">ya</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yab/index.html" data-name="yab" data-keywords="yab b">
+          <a class="select-menu-item js-search-result" href="#/icon/yab" data-name="yab" data-keywords="yab b">
             <span class="select-menu-item-icon berbericon berbericon-yab"></span>
             <div class="select-menu-item-text">yab</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yag/index.html" data-name="yag" data-keywords="yag g">
+          <a class="select-menu-item js-search-result" href="#/icon/yag" data-name="yag" data-keywords="yag g">
             <span class="select-menu-item-icon berbericon berbericon-yag"></span>
             <div class="select-menu-item-text">yag</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yad/index.html" data-name="yad" data-keywords="yad d">
+          <a class="select-menu-item js-search-result" href="#/icon/yad" data-name="yad" data-keywords="yad d">
             <span class="select-menu-item-icon berbericon berbericon-yad"></span>
             <div class="select-menu-item-text">yad</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yadd/index.html" data-name="yadd" data-keywords="yadd">
+          <a class="select-menu-item js-search-result" href="#/icon/yadd" data-name="yadd" data-keywords="yadd">
             <span class="select-menu-item-icon berbericon berbericon-yadd"></span>
             <div class="select-menu-item-text">yadd</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yey/index.html" data-name="yey" data-keywords="yey y">
+          <a class="select-menu-item js-search-result" href="#/icon/yey" data-name="yey" data-keywords="yey y">
             <span class="select-menu-item-icon berbericon berbericon-yey"></span>
             <div class="select-menu-item-text">yey</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yaf/index.html" data-name="yaf" data-keywords="yaf f">
+          <a class="select-menu-item js-search-result" href="#/icon/yaf" data-name="yaf" data-keywords="yaf f">
             <span class="select-menu-item-icon berbericon berbericon-yaf"></span>
             <div class="select-menu-item-text">yaf</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yak/index.html" data-name="yak" data-keywords="yak k">
+          <a class="select-menu-item js-search-result" href="#/icon/yak" data-name="yak" data-keywords="yak k">
             <span class="select-menu-item-icon berbericon berbericon-yak"></span>
             <div class="select-menu-item-text">yak</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yah/index.html" data-name="yah" data-keywords="yah h">
+          <a class="select-menu-item js-search-result" href="#/icon/yah" data-name="yah" data-keywords="yah h">
             <span class="select-menu-item-icon berbericon berbericon-yah"></span>
             <div class="select-menu-item-text">yah</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yahh/index.html" data-name="yahh" data-keywords="yahh hh h">
+          <a class="select-menu-item js-search-result" href="#/icon/yahh" data-name="yahh" data-keywords="yahh hh h">
             <span class="select-menu-item-icon berbericon berbericon-yahh"></span>
             <div class="select-menu-item-text">yahh</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/ya3/index.html" data-name="ya3" data-keywords="ya3 3">
+          <a class="select-menu-item js-search-result" href="#/icon/ya3" data-name="ya3" data-keywords="ya3 3">
             <span class="select-menu-item-icon berbericon berbericon-ya3"></span>
             <div class="select-menu-item-text">ya3</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yakh/index.html" data-name="yakh" data-keywords="yakh kh k h">
+          <a class="select-menu-item js-search-result" href="#/icon/yakh" data-name="yakh" data-keywords="yakh kh k h">
             <span class="select-menu-item-icon berbericon berbericon-yakh"></span>
             <div class="select-menu-item-text">yakh</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yaq/index.html" data-name="yaq" data-keywords="yaq q">
+          <a class="select-menu-item js-search-result" href="#/icon/yaq" data-name="yaq" data-keywords="yaq q">
             <span class="select-menu-item-icon berbericon berbericon-yaq"></span>
             <div class="select-menu-item-text">yaq</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yi/index.html" data-name="yi" data-keywords="yi i">
+          <a class="select-menu-item js-search-result" href="#/icon/yi" data-name="yi" data-keywords="yi i">
             <span class="select-menu-item-icon berbericon berbericon-yi"></span>
             <div class="select-menu-item-text">yi</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yaj/index.html" data-name="yaj" data-keywords="yaj j">
+          <a class="select-menu-item js-search-result" href="#/icon/yaj" data-name="yaj" data-keywords="yaj j">
             <span class="select-menu-item-icon berbericon berbericon-yaj"></span>
             <div class="select-menu-item-text">yaj</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yal/index.html" data-name="yal" data-keywords="yal l">
+          <a class="select-menu-item js-search-result" href="#/icon/yal" data-name="yal" data-keywords="yal l">
             <span class="select-menu-item-icon berbericon berbericon-yal"></span>
             <div class="select-menu-item-text">yal</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yam/index.html" data-name="yam" data-keywords="yam m">
+          <a class="select-menu-item js-search-result" href="#/icon/yam" data-name="yam" data-keywords="yam m">
             <span class="select-menu-item-icon berbericon berbericon-yam"></span>
             <div class="select-menu-item-text">yam</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yan/index.html" data-name="yan" data-keywords="yan n">
+          <a class="select-menu-item js-search-result" href="#/icon/yan" data-name="yan" data-keywords="yan n">
             <span class="select-menu-item-icon berbericon berbericon-yan"></span>
             <div class="select-menu-item-text">yan</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/you/index.html" data-name="you" data-keywords="you o u">
+          <a class="select-menu-item js-search-result" href="#/icon/you" data-name="you" data-keywords="you o u">
             <span class="select-menu-item-icon berbericon berbericon-you"></span>
             <div class="select-menu-item-text">you</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yar/index.html" data-name="yar" data-keywords="yar r">
+          <a class="select-menu-item js-search-result" href="#/icon/yar" data-name="yar" data-keywords="yar r">
             <span class="select-menu-item-icon berbericon berbericon-yar"></span>
             <div class="select-menu-item-text">yar</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yarr/index.html" data-name="yarr" data-keywords="yarr rr r">
+          <a class="select-menu-item js-search-result" href="#/icon/yarr" data-name="yarr" data-keywords="yarr rr r">
             <span class="select-menu-item-icon berbericon berbericon-yarr"></span>
             <div class="select-menu-item-text">yarr</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yagh/index.html" data-name="yagh" data-keywords="yagh gh g h">
+          <a class="select-menu-item js-search-result" href="#/icon/yagh" data-name="yagh" data-keywords="yagh gh g h">
             <span class="select-menu-item-icon berbericon berbericon-yagh"></span>
             <div class="select-menu-item-text">yagh</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yas/index.html" data-name="yas" data-keywords="yas s">
+          <a class="select-menu-item js-search-result" href="#/icon/yas" data-name="yas" data-keywords="yas s">
             <span class="select-menu-item-icon berbericon berbericon-yas"></span>
             <div class="select-menu-item-text">yas</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yass/index.html" data-name="yass" data-keywords="yass ss s">
+          <a class="select-menu-item js-search-result" href="#/icon/yass" data-name="yass" data-keywords="yass ss s">
             <span class="select-menu-item-icon berbericon berbericon-yass"></span>
             <div class="select-menu-item-text">yass</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yach/index.html" data-name="yach" data-keywords="yach ch c h">
+          <a class="select-menu-item js-search-result" href="#/icon/yach" data-name="yach" data-keywords="yach ch c h">
             <span class="select-menu-item-icon berbericon berbericon-yach"></span>
             <div class="select-menu-item-text">yach</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yat/index.html" data-name="yat" data-keywords="yat t">
+          <a class="select-menu-item js-search-result" href="#/icon/yat" data-name="yat" data-keywords="yat t">
             <span class="select-menu-item-icon berbericon berbericon-yat"></span>
             <div class="select-menu-item-text">yat</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yatt/index.html" data-name="yatt" data-keywords="yatt tt t">
+          <a class="select-menu-item js-search-result" href="#/icon/yatt" data-name="yatt" data-keywords="yatt tt t">
             <span class="select-menu-item-icon berbericon berbericon-yatt"></span>
             <div class="select-menu-item-text">yatt</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yaw/index.html" data-name="yaw" data-keywords="yaw w">
+          <a class="select-menu-item js-search-result" href="#/icon/yaw" data-name="yaw" data-keywords="yaw w">
             <span class="select-menu-item-icon berbericon berbericon-yaw"></span>
             <div class="select-menu-item-text">yaw</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yay/index.html" data-name="yay" data-keywords="yay a y">
+          <a class="select-menu-item js-search-result" href="#/icon/yay" data-name="yay" data-keywords="yay a y">
             <span class="select-menu-item-icon berbericon berbericon-yay"></span>
             <div class="select-menu-item-text">yay</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yaz/index.html" data-name="yaz" data-keywords="yaz z">
+          <a class="select-menu-item js-search-result" href="#/icon/yaz" data-name="yaz" data-keywords="yaz z">
             <span class="select-menu-item-icon berbericon berbericon-yaz"></span>
             <div class="select-menu-item-text">yaz</div>
           </a> <!-- /.select-menu-item -->
           
-          <a class="select-menu-item js-search-result" href="icon/yazz/index.html" data-name="yazz" data-keywords="yazz zz z">
+          <a class="select-menu-item js-search-result" href="#/icon/yazz" data-name="yazz" data-keywords="yazz zz z">
             <span class="select-menu-item-icon berbericon berbericon-yazz"></span>
             <div class="select-menu-item-text">yazz</div>
           </a> <!-- /.select-menu-item -->
@@ -223,245 +224,14 @@
 <div class="modal-backdrop js-modal-backdrop"></div>
 
           <span class="header-actions">
-            <a href="usage/index.html">Usage</a>
+            <a href="usage">Usage</a>
             <a href="https://github.com/benahm/berbericons/releases">Release notes</a>
           </span>
         </div>
       </header>
 
-<section class="show-off">
-  <div class="wrapper">
-    <div class="columns">
-      <div class="column third">
-        
-      </div>
-      <div class="column third">
-        <span class="js-showoff-icon">
-          <div class="mega-berbericon berbericon-yaz"></div>
-        </span>
-      </div>
-      <div class="column third">
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="intro">
-  <div class="wrapper">
-    <div class="unit whole lead">
-      <p>Berber icons.</p>
-    </div>
-
-    <div class="download">
-      <a class="button dark-grey" href="https://github.com/benahm/berbericons/archive/v0.1.zip">Download Berbericons</a>
-      <p class="version">
-        v0.1
-      </p>
-    </div>
-
-    <hr>
-  </div>
-</section>
-
-<section>
-  <div class="wrapper">
-
-    <ul class="icon-list js-icon-list">
-      
-      <li class="js-icon-item" data-name="berbericon-ya">
-        <a href="icon/ya/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-ya" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yab">
-        <a href="icon/yab/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yab" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yag">
-        <a href="icon/yag/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yag" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yad">
-        <a href="icon/yad/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yad" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yadd">
-        <a href="icon/yadd/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yadd" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yey">
-        <a href="icon/yey/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yey" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yaf">
-        <a href="icon/yaf/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yaf" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yak">
-        <a href="icon/yak/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yak" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yah">
-        <a href="icon/yah/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yah" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yahh">
-        <a href="icon/yahh/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yahh" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-ya3">
-        <a href="icon/ya3/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-ya3" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yakh">
-        <a href="icon/yakh/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yakh" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yaq">
-        <a href="icon/yaq/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yaq" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yi">
-        <a href="icon/yi/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yi" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yaj">
-        <a href="icon/yaj/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yaj" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yal">
-        <a href="icon/yal/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yal" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yam">
-        <a href="icon/yam/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yam" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yan">
-        <a href="icon/yan/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yan" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-you">
-        <a href="icon/you/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-you" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yar">
-        <a href="icon/yar/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yar" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yarr">
-        <a href="icon/yarr/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yarr" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yagh">
-        <a href="icon/yagh/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yagh" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yas">
-        <a href="icon/yas/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yas" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yass">
-        <a href="icon/yass/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yass" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yach">
-        <a href="icon/yach/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yach" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yat">
-        <a href="icon/yat/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yat" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yatt">
-        <a href="icon/yatt/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yatt" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yaw">
-        <a href="icon/yaw/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yaw" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yay">
-        <a href="icon/yay/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yay" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yaz">
-        <a href="icon/yaz/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yaz" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-      <li class="js-icon-item" data-name="berbericon-yazz">
-        <a href="icon/yazz/index.html" class="js-zc-conditional" >
-          <span class="mega-berbericon berbericon-yazz" style="min-width: 32px;"></span>
-        </a>
-      </li>
-      
-    </ul>
-
-  </div>
-</section>
-
-
-      <div class="footer-pad"></div>
+  <div ng-view></div>
+    <div class="footer-pad"></div>
     </div>
     <section class="footer">
       <div class="wrapper">
