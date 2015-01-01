@@ -45,11 +45,17 @@ $(document).on('click', '.js-modal-backdrop', function(event){
   $('.js-results').removeClass('no-results is-showing');
 });
 
+$(document).on('click', '.js-search-result', function(event){
+  $('.js-results').removeClass('is-showing')
+  $('.js-search-result').addClass('is-hidden')
+  $('.js-search-field').val("");
+});
+
 $(document).ready(function(){
   setInterval(function(){
     $( '.js-showoff-icon' ).trigger( "click" );
   },2000);
-  
+
   var data = JSON.parse(localStorage.getItem('berbericons.github.com'));
   if ($('body').hasClass('index')){
     if(data && data.copyMode){
@@ -117,6 +123,11 @@ app.config(['$routeProvider', function($routeProvider) {
     controller:'homeCtrl',
     controllerAs: 'home'
   })
+  .when('/usage',{
+    templateUrl:'usage.html',
+    controller:'usageCtrl',
+    controllerAs: 'usage'
+  })
   .when('/icon/:iconName',{
     templateUrl:'icon/icon.html',
     controller:'iconCtrl',
@@ -130,6 +141,10 @@ app.controller('appCtrl', ['$scope','$route', '$routeParams',function($scope,$ro
 }]);
 
 app.controller('homeCtrl', ['$scope','$routeParams',function($scope,$routeParams) {
+
+}]);
+
+app.controller('usageCtrl', ['$scope','$routeParams',function($scope,$routeParams) {
 
 }]);
 

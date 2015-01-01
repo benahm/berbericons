@@ -1,0 +1,77 @@
+<div>
+   <section>
+      <div class="wrapper">
+         <div class="columns">
+            <div class="column main markdown-body">
+               <h2>Adding berbericons to your computer</h2>
+               <ol>
+                  <li>
+                     <p><a href="../index.html">Download berbericons</a></p>
+                  </li>
+                  <li>
+                     <p>Install the <strong>berbericons-local.ttf</strong> file: <a href="http://support.apple.com/kb/HT2509">OSX</a> | <a href="http://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts">Windows</a></p>
+                  </li>
+               </ol>
+               <p>Be sure to install the correct file. If you install one of the web fonts instead, it may conflict with GitHub websites, as the local font will be chosen over the web font.</p>
+               <ol>
+                  <li>berbericons will show up as <em>github-berbericons</em> in your font menu. If you use an application with a font-preview menu like Keynote, it will look like a row of GitHub logos.</li>
+               </ol>
+               <h2>Adding berbericons to your project</h2>
+               <ol>
+                  <li>
+                     <p>Download and copy the <strong>berbericons</strong> folder into your project. This example assumes you&#39;ve copied it into the root directory.</p>
+                  </li>
+                  <li>
+                     <p>Link to the <strong>berbericons.css</strong> stylesheet in the <strong>&lt;head&gt;</strong> of your <strong>&lt;html&gt;</strong> page:</p>
+                  </li>
+               </ol>
+               <div class="highlight">
+                  <pre><strong class="language-html" data-lang="html">  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/berbericons/berbericons.css&quot;</span><span class="nt">&gt;</span>
+</strong></pre>
+               </div>
+               <ol>
+                  <li>Simply use an icon in your HTML page:</li>
+               </ol>
+               <div class="highlight">
+                  <pre><strong class="language-html" data-lang="html">  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;berbericon berbericon-yazz&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</strong></pre>
+               </div>
+               <p>If you choose to separate the font files from the CSS files, be sure to update the links in <strong>berbericons.css</strong>.</p>
+               
+               <h2>Examples</h2>
+               <h4>Normal</h4>
+               <p><span class="berbericon berbericon-yazz"></span></p>
+               <div class="highlight">
+                  <pre><strong class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;berbericon berbericon-yazz&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</strong></pre>
+               </div>
+               <h4>Mega</h4>
+               <p><span class="mega-berbericon berbericon-yazz"></span></p>
+               <div class="highlight">
+                  <pre><strong class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;mega-berbericon berbericon-yazz&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</strong></pre>
+               </div>
+               <h2>Best practices</h2>
+               <ul>
+                  <li>
+                     <p>Berber look best in sizes that are multiples of 16px.</p>
+                  </li>
+                  <li>
+                     <p>berbericons are not monospaced. This lets them work well next to type, but it means they won’t stack nicely by default. If you intend to stack berbericons, such as in navigation, you will want to add some CSS to make them the same width, and centered. For example:</p>
+                  </li>
+               </ul>
+               <div class="highlight">
+                  <pre><strong class="language-css" data-lang="css">  <span class="nc">.navigation</span> <span class="nc">.berbericon</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+  <span class="p">}</span>
+</strong></pre>
+               </div>
+            </div>
+            <div class="column sidebar">
+               <span class="page-icon mega-berbericon berbericon-book"></span>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>
