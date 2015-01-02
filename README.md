@@ -12,7 +12,7 @@ Check out the demo page [here](http://benahm.github.io/berbericons/page)
 
 ## Todo :
 - [ ] Add more amazigh signs 
-- [ ] Create a presentation page 
+- [x] Create a presentation page 
 
 ## Licence :
 [GPLv3](http://www.gnu.org/licenses/gpl.txt)
