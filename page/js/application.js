@@ -55,63 +55,111 @@ $(document).ready(function(){
   setInterval(function(){
     $( '.js-showoff-icon' ).trigger( "click" );
   },2000);
-
-  var data = JSON.parse(localStorage.getItem('berbericons.github.com'));
-  if ($('body').hasClass('index')){
-    if(data && data.copyMode){
-      enableZC(".js-zc-conditional");
-    }
-    var status = (data && data.copyMode) ? "enabled" : "disabled" ;
-    var action = (data && data.copyMode) ? "off, run copyMode(false)" : "on, run copyMode()" ;
-    console.log("Copy Mode is currently " + status + ". When enabled, the icons on this page become click-to-copy links.");
-    console.log("Note, while Copy Mode is enabled, you must use the search to navigate to icon profiles.");
-    console.log("To turn Copy Mode " + action + " in this console;");
-    return;
-  }
-  enableZC(".js-zc");
 });
 
-function enableZC(css){
-  ZeroClipboard.config({ moviePath: "/swf/ZeroClipboard.swf"});
-  var $el = $(css);
-  var zc = new ZeroClipboard($el);
-  zc.on("load", function(zc){
+/*================================== data ======================================*/
 
-    zc.on("mouseover", function(zc, args){
-      $("#global-zeroclipboard-html-bridge").addClass("tooltipped tooltipped-n");
-      ariaLabel = $el.attr('aria-label');
-      $bridge = $("#global-zeroclipboard-html-bridge").attr('aria-label', ariaLabel || 'Copy to clipboard.');
-    });
-
-    zc.on("mouseout", function(zc, args){
-      $("#global-zeroclipboard-html-bridge").removeClass("tooltipped tooltipped-n");
-    });
-
-    zc.on("complete", function(zc, args){
-      $bridge = $("#global-zeroclipboard-html-bridge").attr('aria-label', 'Copied!');
-    });
-
-  });
-
-  $(document).on('click', css, function(event){ event.preventDefault(); });
+var data={
+  ya:{
+    unicode: "e600"
+  },
+  ya3:{
+    unicode: "e601"
+  },
+  yab:{
+    unicode: "e602"
+  },
+  yach:{
+    unicode: "e603"
+  },
+  yad:{
+    unicode: "e604"
+  },
+  yadd:{
+    unicode: "e605"
+  },
+  yaf:{
+    unicode: "e606"
+  },
+  yag:{
+    unicode: "e607"
+  },
+  yagh:{
+    unicode: "e608"
+  },
+  yah:{
+    unicode: "e609"
+  },
+  yahh:{
+    unicode: "e60a"
+  },
+  yaj:{
+    unicode: "e60b"
+  },
+  yak:{
+    unicode: "e60c"
+  },
+  yakh:{
+    unicode: "e60d"
+  },
+  yal:{
+    unicode: "e60e"
+  },
+  yam:{
+    unicode: "e60f"
+  },
+  yan:{
+    unicode: "e610"
+  },
+  yaq:{
+    unicode: "e611"
+  },
+  yar:{
+    unicode: "e612"
+  },
+  yarr:{
+    unicode: "e613"
+  },
+  yas:{
+    unicode: "e614"
+  },
+  yass:{
+    unicode: "e615"
+  },
+  yat:{
+    unicode: "e616"
+  },
+  yatt:{
+    unicode: "e617"
+  },
+  yaw:{
+    unicode: "e618"
+  },
+  yay:{
+    unicode: "e619"
+  },
+  yaz:{
+    unicode: "e61a"
+  },
+  yazz:{
+    unicode: "e61b"
+  },
+  yey:{
+    unicode: "e61c"
+  },
+  yi:{
+    unicode: "e61d"
+  },
+  you:{
+    unicode: "e61e"
+  }
 }
-
-function copyMode(toggle) {
-  if (toggle === undefined) toggle = true;
-  enableZC(".js-zc-conditional");
-  var data = { copyMode: toggle };
-  localStorage.setItem('berbericons.github.com', JSON.stringify(data));
-  var status = (data.copyMode) ? "enabled" : "disabled" ;
-  var notStatus = (data.copyMode) ? "disable" : "enable" ;
-  console.log("Copy mode has been " + status + ". To " + notStatus + ", run `copyMode(" + !data.copyMode + ")` in the console.");
-}
-
 
 /*================================ Angularjs ===================================*/
 
 'use strict';
 
-// Declare app level module which depends on views, and components
+
 var app=angular.module('app', [
   'ngRoute'
 ])
@@ -149,5 +197,6 @@ app.controller('usageCtrl', ['$scope','$routeParams',function($scope,$routeParam
 }]);
 
 app.controller('iconCtrl', ['$scope','$routeParams',function($scope,$routeParams) {
-  $scope.iconName = $routeParams.iconName
+  $scope.iconName = $routeParams.iconName;
+  $scope.unicode=data[$scope.iconName].unicode;
 }]);
