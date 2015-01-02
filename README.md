@@ -8,7 +8,7 @@ Check out the demo page [here](http://benahm.github.io/berbericons/page)
 
 [*Work is in progress*]
 
-<img align="center" src="https://raw.githubusercontent.com/benahm/berbericons/master/Capture.PNG"/>
+<img align="center" src="https://raw.githubusercontent.com/benahm/berbericons/master/capture.PNG"/>
 
 ## Todo :
 - [ ] Add more amazigh signs 
