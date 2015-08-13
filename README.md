@@ -6,7 +6,7 @@ Berbericons is a set of SVG, Ai (Adobe Ilustrator) and icon font of berber (amaz
 
 Check out the demo page [here](http://benahm.github.io/berbericons/page)
 
-[*Work is in progress*]
+[*Work in progress*]
 
 <img align="center" src="https://raw.githubusercontent.com/benahm/berbericons/master/capture.PNG"/>
 
